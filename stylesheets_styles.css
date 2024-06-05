@@ -1,0 +1,11 @@
+.md-clipboard {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  font-size: 0.65rem;
+  padding: 0.4rem;
+  color: #005A9E;
+  background-color: #DDEAF6;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}

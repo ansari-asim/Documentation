@@ -1,0 +1,3 @@
+mkdocs-glightbox
+#mkdocs-clipboard-plugin
+mkdocs-copy-code-plugin
