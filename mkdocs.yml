@@ -1,6 +1,9 @@
 site_name: Network Documentation
+nav:
+  - Network : index.md
+  - Ubuntu : os.md
 theme: 
-  name: material
+  name: material #readthedocs #
   #logo: assert.png
   features:
     - navigation.tabs

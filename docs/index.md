@@ -283,3 +283,132 @@ ping -c 4 <camera-ip-address>
 ```
 
    - Replace *camera-ip-address* with the actual IP address of your camera.
+
+## **CCTV Configuration** 
+
+   - When configuring CCTV for video analytics, follow these steps to ensure proper setup and functionality
+
+   1. ***Ensure Network Compatibility***
+   
+   - **Check Network Alignment:** Verify that the CCTV network is on the same network as the GPU.
+   - **Adjust GPU Network Configuration:** If the GPU is not on the same network as the CCTV, reconfigure the GPU to be in the same network as the CCTV.
+   - **DVR Network Configuration:** 
+      
+      If there is a need to configure the DVR network, follow these steps:
+
+      - Log in to the DVR via its IP address.
+  #Add Image here 
+      - Go to the Configuration section.
+      - Navigate to Network.
+      - Select Basic Setting.
+      - Change the IP address as required.
+
+<img src="DVR_Network_Config_page.png" width="700" height="900"> 
+
+
+2. ***Configure DVR Video Encoding Settings***
+
+       **Access DVR Settings:**
+
+      - Open a web browser and enter the IP address of the DVR.
+      - Log in using the appropriate username and password.
+
+      **Navigate to Configuration:**
+
+      - Go to the Configuration section.
+      - Select Video/Audio to access the encoding settings.
+
+      **Set Encoding Parameters:**
+
+    - Adjust the video encoding settings as required. 
+   
+      **Note:-**The specific settings will depend on your video analytics requirements and the capabilities of your DVR.
+
+## **VPN**
+
+A Virtual Private Network (VPN) is a service that encrypts your internet connection and routes it through a remote server, masking your IP address and enhancing your online privacy and security. It allows you to access the internet as if you were in a different location, bypassing geo-restrictions and protecting your data from hackers and surveillance
+
+### **Tunnel VPN**
+
+A Tunnel VPN (Virtual Private Network) refers to the method of securely transmitting data between two points (e.g., your device and a VPN server) by creating an encrypted "tunnel" over a public network such as the internet. This tunnel ensures that the data sent and received is protected from interception and unauthorized access, thereby enhancing privacy and security.
+
+Key features of Tunnel VPN include:
+
+- Encryption: Data is encrypted, making it unreadable to anyone who intercepts it.
+- Authentication: Only authorized users can establish a connection through the tunnel.
+- Data Integrity: Ensures that data is not tampered with during transmission.
+
+Tunnel VPNs are commonly used to secure connections over public Wi-Fi, access region-restricted content, and protect sensitive information from cyber threats.
+
+
+
+Configuring a Tunnel VPN using FortiClient involves several steps, including installing the software, configuring the VPN settings, and connecting to the VPN. 
+
+Below is a step-by-step guide to help you configure FortiClient for Tunnel VPN on your system:
+
+
+**Step 1:** Download and Install FortiClient
+
+**Download FortiClient:**
+
+   - Visit the Fortinet website and navigate to the FortiClient download page.
+
+   - Choose the appropriate version for your operating system (Windows, macOS, Linux, etc.).
+
+**Install FortiClient:**
+
+   - Run the installer file you downloaded.
+
+   - Follow the on-screen instructions to complete the installation process.
+
+**Step 2:** Configure VPN Settings
+
+**Open FortiClient:**
+
+   - Launch the FortiClient application.
+
+**Access VPN Configuration:**
+
+   - On the FortiClient main screen, select the "Remote Access" tab.
+
+**Create a New VPN Connection:**
+
+   - Click on the "Configure VPN" or "New Connection" button.
+   - Choose "SSL-VPN" or "IPsec VPN" based on your network's configuration.
+
+**Enter VPN Details:**
+
+   - Connection Name: Enter a name for your VPN connection (e.g., "Work VPN").
+   - Remote Gateway: Enter the IP address or hostname of your VPN server.
+   - Port: Use the default port or the one provided by your network administrator.
+   - Username and Password: Enter your VPN credentials (provided by your network administrator).
+
+**Save the Configuration:**
+
+   - Click "Save" or "OK" to save your VPN settings.
+
+**Step 3:** Connect to the VPN
+
+**Connect to the VPN:**
+
+   - On the FortiClient main screen, navigate to the "Remote Access" tab.
+   - Select the VPN connection you created from the dropdown menu.
+   - Click the "Connect" button.
+
+**Authenticate:**
+
+   - If prompted, enter your username and password.
+   - Complete any additional authentication steps if required (e.g., two-factor authentication).
+
+**Verify the Connection:**
+
+   - Once connected, the FortiClient interface will show the status as "Connected".
+   - You can now access resources on the remote network as if you were directly connected to it.
+
+**Step 4:** Disconnect from the VPN
+
+**Disconnect:**
+
+   - When you are done using the VPN, go back to the FortiClient application.
+   - Click the "Disconnect" button on the "Remote Access" tab.
+
